@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dfdfdf"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:baselineAligned="false"
+        android:background="#444444">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:id="@+id/home"
+            android:src="@drawable/home" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Beranda"
+            android:id="@+id/text_menuutama"
+            android:layout_weight="1.00"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textIsSelectable="false"
+            android:textColor="#FFFFFF"
+            android:singleLine="false"
+            android:gravity="center" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:text="Keluar"
+            android:id="@+id/btn_keluar"
+            android:singleLine="false"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="#000000"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.26"></LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.32"></LinearLayout>
+
+        <Button
+            android:id="@+id/btn_qrcode"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:text="QR Code"
+            android:drawableTop="@drawable/btn_qrcode"
+            android:background="#dfdfdf"
+            android:visibility="visible"
+            android:textSize="12dp"
+            android:textAlignment="center"
+            android:singleLine="false" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33"></LinearLayout>
+
+        <Button
+            android:id="@+id/btn_input_text"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:text="Input text"
+            android:drawableTop="@drawable/btn_input_text"
+            android:background="#dfdfdf"
+            android:visibility="visible"
+            android:textSize="12dp"
+            android:textAlignment="center"
+            android:singleLine="false" />
+    </LinearLayout>
+
+    </LinearLayout>
+
+

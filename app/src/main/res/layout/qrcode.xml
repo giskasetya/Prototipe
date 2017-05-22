@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFDFDF"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:baselineAligned="false"
+        android:background="#444444">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:id="@+id/home"
+            android:src="@drawable/home" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="QR Code"
+            android:id="@+id/text_menuutama"
+            android:layout_weight="1.00"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textIsSelectable="false"
+            android:textColor="#FFFFFF"
+            android:singleLine="false"
+            android:gravity="center" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:text="Kembali"
+            android:id="@+id/btn_kembalihome"
+            android:singleLine="false"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="#000000"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="QR Code Scanner"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="#202020"
+            android:padding="17sp"
+            android:layout_marginBottom="30dp"
+            android:background="#ffffff" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Mulai scan"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="#202020"
+            android:padding="17sp"
+            android:layout_marginBottom="30dp"
+            android:background="#ffffff"
+            android:id="@+id/btn_scan"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hasil scan :"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="#202020"
+            android:padding="17sp"
+            android:layout_marginBottom="30dp"
+            android:background="#dfdfdf" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="khvqdqdvedjqdqdvwqjkddvdjkd"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textColor="#202020"
+            android:gravity="left"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/hasil_scan"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Periksa data"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="#202020"
+            android:padding="17sp"
+            android:layout_marginBottom="30dp"
+            android:background="#ffffff"
+            android:id="@+id/btn_periksa"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
